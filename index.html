@@ -1,162 +1,88 @@
 <!DOCTYPE html>
-<html style="color: white; background-color: #5B5B5B">
-    <title>HTML O que é?</title>
-    <body> 
-        <h1>
-            <u>
-                O QUE É e PARA QUE SERVE HTML?
-            </u>
-            
-        </h1>
-
-
-        <p class="p1">
-            HTML (Hypertext Markup Language) é linguagem de marcação de texto usada para a criação de páginas web.
-        </p>
-
-        <br>
-        <br>
-        <br>
+<body style="color: white; background-color: #5B5B5B">
+    <title>
+        Introdução
+    </title>
         <h2>
-            HTML
+            <u>
+                O QUE É O NOSSO TRABALHO?
+            </u>
         </h2>
-
-        <p class="htmltext">
-            No desenvolvimento duma página web,<br>
-            o HTML é responsável pela parte do texto e<br>
-            da informação, semelhante a um jornalista na<br>
-            parte da criação de um jornal.<br>
-
+        <p>
+            <p class="intro">
+                Com este trabalho, nós queremos mostrar-vos o que é e como se produz uma página HTML
+            </p>
+            <p class="intro">
+                Usando a própria ferramenta.
+            </p>
         </p>
 
-
-        <h3>
-            CSS
-        </h3>
-
-        <p class="csstext">
-            No desenvolvimento duma página web,<br>
-            o CSS é responsável pela parte da decoração e<br>
-            da formatação, semelhante a um designer na<br>
-            parte da criação de um jornal.<br>
-
+        <p>
+            <p><b>Primeira página: </b></p>
+            <p>Ferramentas necessárias para a criação de páginas web;</p>
+            <br>
+            <p><b>Segunda página: </b></p>
+            <p>Tutorial de como fazer a página HTML.</p>
         </p>
+        
 
-
-        <h4>
-            JS
-        </h4>
-        <p class="jstext">
-            No desenvolvimento duma página web,<br>
-            o JS é responsável pela parte da programação e<br>
-            da funcionamento, semelhante a um publicador na<br>
-            parte da criação de um jornal.<br>
-
+        <p class="setas">
+            Clique nas setas da esquerda e da direita para andar pelos slides.
         </p>
-        <div class="html_img">
-            <img src="HTML.png" alt="HTML">
-        </div>
-
-        <div class="css_img">
-            <img src="CSS.png" alt="CSS">
-        </div>
-
-        <div class="js_img">
-            <img src="js.png" alt="JS">
-        </div>
-
-        <style>
-            html {
-                background-image: url("bg_2.jpg");
-                font-family: 'Comic Sans MS', cursive;
-
-            }
-            h1 {
-                text-align: center;
-            }
-
-            .p1 {
-                text-align: center;
-                font-size: 20px;
-            }
-
-            h2 {
-                padding-left: 170px;
-                font-size: 20px; 
-            }
-
-            .htmltext{
-                font-size: 18px;
-                text-align: center;
-                padding-right: 930px
-            }
-
-            h3 {
-                font-size:20px;
-                text-align: center;
-                position:relative; top:-170px
-            }
-            .csstext{
-                font-size: 18px;
-                text-align: center;
-                position:relative; top:-170px
-                
-            }
-
-            h4 {
-                font-size: 20px;
-                text-align: end;
-                padding-right: 200px;
-                position:relative; top:-340px
-            }
-
-            .jstext {
-                font-size: 18px;
-                text-align: center;
-
-                padding-left: 900px;
-                position:relative; top: -355px
-                
-            }
-
-            img {
-                max-width: 100%;
-                max-height: 100%;
-            }
-            .html_img {
-                height: 200px;
-                width: 200px;
-                padding-left: 100px;
-                position:relative; top:-340px
-
-            }
-            .css_img {
-                height: 200px;
-                width: 200px;
-                padding-left: 570px;
-                position:relative; top:-540px
-            }
-            .js_img {
-                height: 200px;
-                width: 200px;
-                padding-left: 1020px;
-                position:relative; top:-720px
-            }
-        </style>
-
-
     </body>
-    
-    
-    
+
+
+    <style>
+        body {
+            background-image: url("i gues.jpg");
+            font-family: "Comic Sans MS", cursive;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 33px;
+        }
+
+        h2 {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        h3 {
+            text-align: end;
+            font-size: 16px;
+			
+        }
+        
+
+		.intro {
+            text-align: center;
+			font-size: 30px;
+		}
+
+
+
+        p {
+            font-size:22px;
+        }
+
+        p1 {
+            font-size: 18px;
+        }
+
+        .setas {
+            text-align: end;
+            position: relative; top: 100px;
+        }
+    </style>
     <script>
         window.addEventListener("keydown", checkKeyPress, false);
 
         function checkKeyPress(key){
             if (key.keyCode == "39"){
-            window.location.replace("bottomtext.html");
+                window.location.replace("htmlcssjs.html");
             }
 
-        }   
+        }
     </script>
 </html>
