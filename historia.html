@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<body style="color: white; background-color: #5B5B5B">
+    <title>
+        História HTML
+    </title>
+        <h2>
+            <u>
+                A história do HTML
+            </u>
+        </h2>
+        <p>
+            <p class="para1">
+                O HTML foi criado em 1991, por Tim Berners-Lee, no CERN (European Council for Nuclear Research) na suíça.
+            </p>
+
+            <p class="para2">
+                Inicialmente o HTML foi projetado para interligar instituições de pesquisa próximas, e compartilhar documentos com facilidade.
+            </p>
+        </p>
+
+        <div class="tim">
+            <img src="tim.png" alt="JS">
+        </div>
+
+        <div class="www">
+            <img src="WWW.png" alt="JS">
+        </div>
+
+        <p class="desc">
+            Tim Berners-Lee é um ciêntista da computação britânico, que em 12 de maio de 1989 criou a World Wide Web (WWW)
+        </p>
+
+
+        
+    </body>
+
+
+
+
+    <style>
+        body {
+            background-image: url("wallpaper.jpg");
+            font-family: "Comic Sans MS", cursive;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 33px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        h3 {
+            text-align: end;
+            font-size: 16px;
+			
+        }
+		
+        .para1 {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .para2 {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .tim {
+            position: relative; left: 350px;
+        }
+
+        .www {
+            position: relative; left: 750px;
+            position: relative; top: -229px
+        }
+
+
+        .desc {
+            font-size:20px;
+            text-align: center;
+            position: relative; top: -200px
+        }
+    </style>
+    <script>
+        window.addEventListener("keydown", checkKeyPress, false);
+
+        function checkKeyPress(key){
+            if (key.keyCode == "37"){
+                window.location.replace("index.html");
+
+            }
+
+            if (key.keyCode == "39"){
+                window.location.replace("htmlcssjs.html");
+
+            }
+        }
+    </script>
+</html>

@@ -19,16 +19,26 @@
 
         <p>
             <p><b>Primeira página: </b></p>
-            <p>Ferramentas necessárias para a criação de páginas web;</p>
+            <p>História do HTML</p>
             <br>
             <p><b>Segunda página: </b></p>
-            <p>Tutorial de como fazer a página HTML.</p>
-        </p>
-        
+            <p>Ferramentas necessárias para a criação de páginas web</p>
+            <br>
+            <p><b>Terceira página:</b></p>
+            <p>Tutorial de como fazer uma página HTML</p>
+
 
         <p class="setas">
             Clique nas setas da esquerda e da direita para andar pelos slides.
         </p>
+
+        <div class="esen_img">
+            <img src="esen.png" alt="esen">
+        </div>
+
+        <div class ="poch_img">
+            <img src="poch.png" alt="esen">
+        </div>
     </body>
 
 
@@ -71,16 +81,28 @@
         }
 
         .setas {
+            font-size: 20px;
             text-align: end;
-            position: relative; top: 100px;
+            position: relative; top: 65px;
         }
+
+        .esen_img {
+            position: relative;  top: -30px;
+        }
+
+        .poch_img {
+            position: relative; left: 130px;
+            position: relative; top: -150px;
+
+        }
+
     </style>
     <script>
         window.addEventListener("keydown", checkKeyPress, false);
 
         function checkKeyPress(key){
             if (key.keyCode == "39"){
-                window.location.replace("htmlcssjs.html");
+                window.location.replace("historia.html");
             }
 
         }
