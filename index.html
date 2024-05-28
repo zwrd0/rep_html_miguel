@@ -1,110 +1,134 @@
 <!DOCTYPE html>
-<body style="color: white; background-color: #5B5B5B">
-    <title>
-        Introdução
-    </title>
-        <h2>
-            <u>
-                O QUE É O NOSSO TRABALHO?
-            </u>
-        </h2>
-        <p>
-            <p class="intro">
-                Com este trabalho, nós queremos mostrar-vos o que é e como se produz uma página HTML
-            </p>
-            <p class="intro">
-                Usando a própria ferramenta.
-            </p>
-        </p>
-
-        <p>
-            <p><b>Primeira página: </b></p>
-            <p>História do HTML</p>
-            <br>
-            <p><b>Segunda página: </b></p>
-            <p>Ferramentas necessárias para a criação de páginas web</p>
-            <br>
-            <p><b>Terceira página:</b></p>
-            <p>Tutorial de como fazer uma página HTML</p>
-
-
-        <p class="setas">
-            Clique nas setas da esquerda e da direita para andar pelos slides.
-        </p>
-
-        <div class="esen_img">
-            <img src="esen.png" alt="esen">
-        </div>
-
-        <div class ="poch_img">
-            <img src="poch.png" alt="esen">
-        </div>
-    </body>
-
-
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Memes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <style>
         body {
-            background-image: url("i gues.jpg");
-            font-family: "Comic Sans MS", cursive;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            overflow-x: hidden;
         }
-
-        h1 {
+        .navbar {
+            background-color: #343a40;
+        }
+        .navbar-brand {
+            color: #fff !important;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .nav-item .nav-link {
+            color: #fff !important;
+            font-size: 1.1em;
+        }
+        .nav-item .nav-link:hover {
+            color: #d4d4d4 !important;
+        }
+        .content {
+            padding: 50px;
             text-align: center;
-            font-size: 33px;
+            background-color: #fff;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            animation: fadeIn 2s;
         }
-
-        h2 {
-            font-size: 40px;
-            text-align: center;
+        .content h2 {
+            color: #343a40;
+            animation: fadeInDown 1s;
         }
-
-        h3 {
-            text-align: end;
-            font-size: 16px;
-			
+        .content p {
+            font-size: 1.2em;
+            color: #6c757d;
+            margin-top: 20px;
+            animation: fadeInUp 1s;
         }
-        
-
-		.intro {
-            text-align: center;
-			font-size: 30px;
-		}
-
-
-
-        p {
-            font-size:22px;
+        .content .frame {
+            display: inline-block;
+            padding: 10px;
+            border: 5px solid #343a40;
+            border-radius: 10px;
+            margin-top: 20px;
+            animation: zoomIn 1s;
         }
-
-        p1 {
-            font-size: 18px;
+        .content .frame img {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
         }
-
-        .setas {
-            font-size: 20px;
-            text-align: end;
-            position: relative; top: 65px;
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
-
-        .esen_img {
-            position: relative;  top: -30px;
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-
-        .poch_img {
-            position: relative; left: 130px;
-            position: relative; top: -150px;
-
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-
+        @keyframes zoomIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
     </style>
-    <script>
-        window.addEventListener("keydown", checkKeyPress, false);
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand animate__animated animate__bounce" href="#">MEMES</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link animate__animated animate__fadeInRight" href="duarte.html">Duarte</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link animate__animated animate__fadeInRight" href="miguel.html">Miguel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link animate__animated animate__fadeInRight" href="diana.html">Diana</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link animate__animated animate__fadeInRight" href="artur.html">Artur</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link animate__animated animate__fadeInRight" href="yasmin.html">Yasmin</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-        function checkKeyPress(key){
-            if (key.keyCode == "39"){
-                window.location.replace("historia.html");
-            }
+    <div class="container">
+        <div class="content animate__animated animate__fadeIn">
+            <h2 class="animate__animated animate__fadeInDown">Bem-vindos ao nosso baú de memórias</h2>
+            <p class="animate__animated animate__fadeInUp">
+                Este site foi criado para guardar e compartilhar as nossas memórias, capturando os momentos
+                divertidos e especiais que passamos juntos. Cada seção dedicada a um de nós é um testemunho
+                das risadas, aventuras e amizade que nos unem.
+            </p>
+            <p class="animate__animated animate__fadeInUp">
+                Agradecemos a cada um de vocês pelas memórias incríveis que criamos juntos. Que possamos
+                continuar a adicionar mais momentos felizes e inesquecíveis a este nosso baú digital.
+            </p>
+            <div class="frame animate__animated animate__zoomIn">
+                <img src="grupo.jpg" alt="Foto do grupo">
+            </div>
+        </div>
+    </div>
 
-        }
-    </script>
+    <audio autoplay loop controls>
+        <source src="musica.mp3" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
