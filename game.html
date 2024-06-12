@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lover's Roulette</title>
+    <link rel="stylesheet" href="gamestyle.css">
+    <audio id="gunshotSound" src="sounds/gunshot.mp3" preload="auto"></audio>
+    <audio id="emptyshotSound" src="sounds/emptyshot.mp3" preload="auto"></audio>
+</head>
+<body>
+    <body>
+        <div class="scoreboard" id="player1-scoreboard">
+            <h3>Player 1</h3>
+            <p>Points: <span id="player1-points">0</span></p>
+            <p>Bullets left: <span id="player1-bullets">6</span></p>
+        </div>
+        <div class="scoreboard" id="player2-scoreboard">
+            <h3>Player 2</h3>
+            <p>Points: <span id="player2-points">0</span></p>
+            <p>Bullets left: <span id="player2-bullets">6</span></p>
+        </div>
+        <h1 id="turn-display">Player 1's turn</h1>
+        <div class="game-container">
+            <div id="player1" class="player-area">
+                <h2>Player 1</h2>
+                <div id="player1-output">Waiting to play...</div>
+            </div>
+            <div id="player2" class="player-area">
+                <h2>Player 2</h2>
+                <div id="player2-output">Waiting to play...</div>
+            </div>
+            <button id="draw-button" onclick="playRound(currentPlayer)">Draw</button>
+            <button id="next-round-button" onclick="resetGame()" style="display: none;">Next Round</button>
+        </div>
+    <script src="gamescript.js"></script>
+</body>
+</html>
